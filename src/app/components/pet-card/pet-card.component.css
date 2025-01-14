@@ -1,0 +1,390 @@
+/* ----------------------------------------- VARIABLES ------------------------------------------------- */
+:root {
+    /* tipografía */
+    --fuente1: "Figtree", serif;
+    --fuente2: "IBM Plex Mono", monospace;
+    /* colores */
+    --color-primary: #000000;
+    --color-secundary: #ffffff;
+    --color-1: #1a8510;
+    --color-2: #012A4A;
+    --color-3: #A3CEF1;
+    --backgroundColor: #c4c5c6;
+    --colorPrimary1: #ff70a6;
+    --colorPrimary2: #ffd670;
+    --colorPrimary3: #8AC6DD;
+    --colorPrimary4: #FF9770;
+    --colorPrimary: #449b5b;
+    --textColor: #000;
+    --colorbottonlogin: white;
+
+
+
+    --tipography: 'Arial Narrow', sans-serif;
+    --tipography1: "Edu AU VIC WA NT Dots", cursive;
+
+}
+
+
+
+/* ----------------------------------------- GLOBAL STYLES ------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------------------------------------- VARIABLES ------------------------------------------------- */
+:root {
+    /* tipografía */
+    --fuente1: "Figtree", serif;
+    --fuente2: "IBM Plex Mono", monospace;
+    /* colores */
+    --color-primary: #000000;
+    --color-secundary: #ffffff;
+    --color-1: #1a8510;
+    --color-2: #012A4A;
+    --color-3: #A3CEF1;
+    --color-4: #FFD235;
+}
+
+/* ----------------------------------------- HEADER ------------------------------------------------- */
+.header {
+    margin: 0;
+    width: 100%;
+    /* Ocupa todo el ancho */
+    height: 17vh;
+    /* Ajuste automático para el contenido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------- barra nav -------- */
+.container-navBar {
+    width: 100%;
+    height: 100%;
+    /* Mantiene la altura */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5vw;
+    font-family: var(--fuente1);
+    font-size: large;
+    padding-left: 70px;
+    padding-right: 90px;
+}
+
+/* -------- logo -------- */
+.logo-navBar {
+    margin-right: 20px;
+    width: 10vw;
+    /* Espacio entre el logo y la lista */
+}
+
+.logo-navBar img {
+    width: 15vw;
+}
+
+/* -------- Nav Bar -------- */
+.navBar-list {
+    width: 45vw;
+    /* Ancho de la lista */
+    height: 5vh;
+    /* Altura de la lista */
+    display: flex;
+    /* Mantiene la lista en fila */
+    list-style: none;
+    /* Elimina los puntos de la lista */
+    gap: 4vw;
+    /* Espacio entre los elementos de la lista */
+    margin: 0;
+    /* Elimina el margen */
+    padding: 0;
+    /* Elimina el padding */
+    font-weight: bold;
+    background-color: rgba(128, 128, 128, 0.315);
+    /* Color de fondo */
+    border-radius: 50px;
+    /* Bordes redondeados */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    /* Sombra */
+    justify-content: center;
+    /* Centra los elementos */
+    align-items: center;
+    /* Alinea verticalmente los elementos */
+}
+
+/* Quitar subrayado de los enlaces */
+.navBar-list a {
+    text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
+    color: var(--color-primary);
+    /* Asegúrate de que el color sea visible */
+}
+
+/* -------- button login -------- */
+.button-login {
+    width: 7vw;
+    height: 5vh;
+    padding: 0;
+    /* Asegúrate de que no haya padding que afecte el centrado */
+    background-color: var(--color-1);
+    border-radius: 50px;
+    font-weight: bold;
+    border: solid 4px rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
+    /* Espacio entre el botón de login y la lista */
+    display: flex;
+    /* Usar flexbox para centrar */
+    align-items: center;
+    /* Centra verticalmente el contenido */
+    justify-content: center;
+    /* Centra horizontalmente el contenido */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    /* Transición suave */
+}
+
+/* Quitar subrayado del enlace de login */
+.button-login a {
+    text-decoration: none;
+    /* Elimina el subrayado del enlace */
+    color: var(--color-secundary);
+    /* Asegúrate de que el color sea visible */
+    display: block;
+    /* Ocupa todo el botón */
+    width: 100%;
+    /* Ocupa todo el ancho del botón */
+    line-height: 5vh;
+    /* Asegura que el texto esté centrado verticalmente */
+    text-align: center;
+    /* Centra el texto horizontalmente */
+}
+
+/* Estilo al pasar el mouse */
+.button-login:hover {
+    background-color: var(--color-secundary);
+    /* Color al pasar el mouse */
+    color: var(--color-primary);
+    /* Cambia el color del texto */
+    border-color: var(--color-primary);
+    /* Cambia el borde al pasar el mouse */
+}
+
+.button-login a:hover {
+    color: var(--color-primary);
+    /* Cambia el color del enlace al pasar el mouse */
+}
+
+
+
+/* ----------------------------------------- MAIN ------------------------------------------------- */
+/* Main Content */
+.main-content {
+    background-color: #ffffff;
+    margin-top: 5vh;
+    width: 100%;
+}
+
+.intro {
+    display: flex; /* Usamos flexbox para centrar */
+    flex-direction: column; /* Colocamos los elementos en una columna */
+    align-items: center; /* Centramos horizontalmente */
+    justify-content: center; /* Centramos verticalmente */
+    width: 100%;
+    height: 20vh; /* Cambié a vh para un mejor control de altura */
+    margin-bottom: 5vh;
+    text-align: center; /* Asegúrate de que el texto esté centrado */
+}
+
+.intro h2 {
+    font-size: 3rem;
+    color: black;
+    margin: 0; /* Elimina márgenes por defecto */
+}
+
+.intro p {
+    font-size: 1.1rem;
+    color: black;
+    margin-top: 2vh; /* Ajusté el margen superior para un mejor espaciado */
+    width: 80%; /* Aumenté el ancho para que se vea mejor en pantallas pequeñas */
+    max-width: 600px; /* Limitamos el ancho máximo para mejor legibilidad */
+}
+/* ----------------- cards ---------------- */
+
+.pet-gallery {
+    text-align: center;
+    margin: 20px;
+    padding: 50px;
+    margin-bottom: 3rem;
+    background-color: #012A4A;
+    border-radius: 20px;
+
+}
+
+.titulo {
+    font-family: var(--tipography1);
+    font-size: 50px;
+    background-color: var(--color-2);
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columnas */
+    gap: 100px;
+}
+
+.pet-card {
+    border: 26px solid #ddd;
+    padding: 30px;
+    border-radius: 71px;
+    background-color: #ffffff;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.pet-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 3vh;
+}
+
+.pet-card h4 {
+    font-size: 1.2em;
+    margin-bottom: 1vh;
+}
+
+.pet-card p {
+    font-size: 1em;
+    margin-bottom: 3vh;
+    padding: 20px;
+}
+
+
+.container-button{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.buttonAdoptame {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    background-color: var(--color-2); /* Fondo azul claro */
+    border: solid 5px #ffffff; /* Borde azul oscuro */
+    color: rgb(255, 255, 255); /* Texto en azul oscuro */
+}
+
+.buttonAdoptame a {
+    text-decoration: none;
+    color: inherit; /* Hereda el color del botón */
+    transition: color 0.5s ease; /* Animación para el color del texto */
+}
+
+.buttonAdoptame:hover {
+    background-color: var(--color-3); /* Cambia a azul oscuro al hacer hover */
+    color: var(--color-2); /* Cambia el texto a azul claro */
+    transform: scale(1.05); /* Animación de aumento de tamaño */
+    border: solid 5px var(--color-2);
+    border-radius: 4px;
+}
+
+.buttonDoname {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    background-color: var(--color-3); /* Fondo verde */
+    border: solid 5px var(--color-2); /* Borde blanco */
+    color: var(--color-2); /* Texto en blanco */
+}
+
+.buttonDoname a {
+    text-decoration: none;
+    color: inherit; /* Hereda el color del botón */
+    transition: color 0.5s ease; /* Animación para el color del texto */
+}
+
+.buttonDoname:hover {
+    background-color: var(--color-2); /* Cambia a azul oscuro al hacer hover */
+    color: var(--color-secundary); /* Cambia el texto a azul claro */
+    transform: scale(1.05); /* Animación de aumento de tamaño */
+    border: solid 5px var(--color-secundary);/* Animación de aumento de tamaño */
+    border-radius: 4px;
+}
+
+
+
+/* ----------------------- listo Para adoptar  ----------------------*/
+
+.cta {
+    text-align: center;
+    background-color: #eaeaea;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* -------- footer -------- */
+.text {
+    background-color: var(--color-primary);
+    color: var(--color-secundary);
+    /* Color del texto en el pie de página */
+    padding: 20px;
+}
+
+.text {
+    color: var(--color-secundary);
+    /* Color de los enlaces en el pie de página */
+    text-decoration: none;
+    /* Sin subrayado */
+}
+
+.text:hover {
+    text-decoration: underline;
+    /* Subrayado en hover */
+}
+
+.cta {
+    background-color: hsl(197, 14%, 90%);
+    font-family: var(--tipography1);
+    font-size: 30px;
+}
+
+
+
+.animales {
+    width: 20px;
+    height: 30px;
+    margin-top: 50px;
+    padding: 50%;
+}
+
+/* -------- footer -------- */
+footer {
+    background-color: var(--color-2);
+    color: var(--color-secundary); /* Color del texto en el pie de página */
+    padding: 20px;
+}
+
+footer a {
+    color: var(--color-secundary); /* Color de los enlaces en el pie de página */
+    text-decoration: none; /* Sin subrayado */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Subrayado en hover */
+}

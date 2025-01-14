@@ -1,0 +1,35 @@
+.modal-header.bg-light {
+    background-color: #b80d1c;
+    /* Rosa claro */
+}
+
+.modal-title.text-center {
+    width: 100%;
+    /* Asegura que el título ocupe todo el ancho */
+    text-align: center;
+    /* Centra el texto */
+}
+
+.section-header .msj{
+    text-align: center;
+    width: 73%;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-bottom: 10%;
+}
+.section-header h2 {
+    font-size: 24px;
+    text-align: center;
+    width: 73%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+/* CSS */
+.rounded-corners {
+    transition: transform 0.3s ease, filter 0.3s ease; /* Animación suave */
+}
+
+.rounded-corners:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+    filter: brightness(1.2); /* Incrementa el brillo */
+}

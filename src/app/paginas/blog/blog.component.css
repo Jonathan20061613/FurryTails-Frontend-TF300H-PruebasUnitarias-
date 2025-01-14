@@ -1,0 +1,81 @@
+.blog-container {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: 'Figtree', sans-serif;
+}
+
+.blog-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Bevan', cursive;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.blog-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.blog-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-card-content {
+  padding: 20px;
+}
+
+.blog-card-title {
+  font-size: 1.5rem;
+  color: #0078d7;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-family: 'Bevan', cursive;
+}
+
+.blog-card-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.blog-card a {
+  color: #28a745;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.blog-card a:hover {
+  color: #1b6c2f;
+}
+
+@media (max-width: 768px) {
+  .blog-list {
+      flex-direction: column;
+      align-items: center;
+  }
+}

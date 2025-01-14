@@ -1,0 +1,442 @@
+/* Contenedor de las tarjetas */
+.containerCards {
+    padding: 50px;
+    background-color: #4984c391;
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que los elementos se ajusten en filas o columnas */
+    gap: 20px;
+    /* Espaciado entre tarjetas */
+    justify-content: center;
+    /* Centra las tarjetas */
+    height: auto;
+}
+
+/* Estilos para las tarjetas */
+.card {
+    flex: 1 1 300px;
+    /* Ocupa un espacio flexible con un ancho base de 300px */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 50px;
+    height: auto;
+    /* Ajusta automáticamente la altura */
+    width: auto;
+    /* Ancho máximo para evitar tarjetas demasiado grandes */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Cuerpo de las tarjetas */
+.card-body {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    height: auto;
+    /* Altura automática */
+}
+
+/* Títulos de las tarjetas */
+.card-title {
+    font-family: 'Bevan', cursive;
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* Texto de las tarjetas */
+.card-text {
+    font-size: 1.2rem;
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Botones */
+.btn {
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: solid 5px white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background-color: #1a5fa8e2;
+}
+
+.btn-primary:hover {
+    background-color: #014792;
+}
+
+.btn-success {
+    background-color: #269941;
+}
+
+.btn-success:hover {
+    background-color: #085819;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+}
+
+.btn-warning:hover {
+    background-color: #b48700;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #a21523;
+}
+
+.rounded-pill {
+    border-radius: 50px;
+}
+
+/* Responsividad para diferentes anchos */
+@media (max-width: 1500px) {
+
+    /* Contenedor de las tarjetas */
+    .containerCards {
+        padding: 50px;
+        background-color: #4984c391;
+        display: flex;
+        flex-wrap: wrap;
+        /* Permite que los elementos se ajusten en filas o columnas */
+        gap: 20px;
+        /* Espaciado entre tarjetas */
+        justify-content: center;
+        /* Centra las tarjetas */
+        height: auto;
+    }
+
+    /* Estilos para las tarjetas */
+    .card {
+        flex: 1 1 300px;
+        /* Ocupa un espacio flexible con un ancho base de 300px */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        padding: 50px;
+        height: auto;
+        /* Ajusta automáticamente la altura */
+        width: auto;
+        /* Ancho máximo para evitar tarjetas demasiado grandes */
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Cuerpo de las tarjetas */
+    .card-body {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 15px;
+        height: auto;
+        /* Altura automática */
+    }
+
+    /* Títulos de las tarjetas */
+    .card-title {
+        font-family: 'Bevan', cursive;
+        font-size: 3rem;
+        color: #333;
+        margin-bottom: 25px;
+    }
+
+    /* Texto de las tarjetas */
+    .card-text {
+        font-size: 1.2rem;
+        color: #000000;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    /* Botones */
+    .btn {
+        font-size: 1.2rem;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 12px 30px;
+        border-radius: 50px;
+        border: solid 5px white;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn:hover {
+        transform: translateY(-2px);
+    }
+
+    .btn-primary {
+        background-color: #1a5fa8e2;
+    }
+
+    .btn-primary:hover {
+        background-color: #014792;
+    }
+
+    .btn-success {
+        background-color: #269941;
+    }
+
+    .btn-success:hover {
+        background-color: #085819;
+    }
+
+    .btn-warning {
+        background-color: #ffc107;
+    }
+
+    .btn-warning:hover {
+        background-color: #b48700;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+    }
+
+    .btn-danger:hover {
+        background-color: #a21523;
+    }
+
+    .rounded-pill {
+        border-radius: 50px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    /* Contenedor de las tarjetas */
+    .containerCards {
+        padding: 50px;
+        background-color: #4984c391;
+        display: flex;
+        flex-wrap: wrap;
+        /* Permite que los elementos se ajusten en filas o columnas */
+        gap: 20px;
+        /* Espaciado entre tarjetas */
+        justify-content: center;
+        /* Centra las tarjetas */
+        height: auto;
+    }
+
+    /* Estilos para las tarjetas */
+    .card {
+        flex: 1 1 300px;
+        /* Ocupa un espacio flexible con un ancho base de 300px */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        padding: 50px;
+        height: auto;
+        /* Ajusta automáticamente la altura */
+        width: auto;
+        /* Ancho máximo para evitar tarjetas demasiado grandes */
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Cuerpo de las tarjetas */
+    .card-body {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 15px;
+        height: auto;
+        /* Altura automática */
+    }
+
+    /* Títulos de las tarjetas */
+    .card-title {
+        font-family: 'Bevan', cursive;
+        font-size: 3rem;
+        color: #333;
+        margin-bottom: 25px;
+    }
+
+    /* Texto de las tarjetas */
+    .card-text {
+        font-size: 1.2rem;
+        color: #000000;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    /* Botones */
+    .btn {
+        font-size: 1.2rem;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 12px 30px;
+        border-radius: 50px;
+        border: solid 5px white;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn:hover {
+        transform: translateY(-2px);
+    }
+
+    .btn-primary {
+        background-color: #1a5fa8e2;
+    }
+
+    .btn-primary:hover {
+        background-color: #014792;
+    }
+
+    .btn-success {
+        background-color: #269941;
+    }
+
+    .btn-success:hover {
+        background-color: #085819;
+    }
+
+    .btn-warning {
+        background-color: #ffc107;
+    }
+
+    .btn-warning:hover {
+        background-color: #b48700;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+    }
+
+    .btn-danger:hover {
+        background-color: #a21523;
+    }
+
+    .rounded-pill {
+        border-radius: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    /* Contenedor de las tarjetas */
+    .containerCards {
+        padding: 50px;
+        background-color: #4984c391;
+        display: flex;
+        flex-wrap: wrap;
+        /* Permite que los elementos se ajusten en filas o columnas */
+        gap: 20px;
+        /* Espaciado entre tarjetas */
+        justify-content: center;
+        /* Centra las tarjetas */
+        height: auto;
+    }
+
+    /* Estilos para las tarjetas */
+    .card {
+        flex: 1 1 300px;
+        /* Ocupa un espacio flexible con un ancho base de 300px */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        padding: 50px;
+        height: auto;
+        /* Ajusta automáticamente la altura */
+        width: auto;
+        /* Ancho máximo para evitar tarjetas demasiado grandes */
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Cuerpo de las tarjetas */
+    .card-body {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 15px;
+        height: auto;
+        /* Altura automática */
+    }
+
+    /* Títulos de las tarjetas */
+    .card-title {
+        font-family: 'Bevan', cursive;
+        font-size: 3rem;
+        color: #333;
+        margin-bottom: 25px;
+    }
+
+    /* Texto de las tarjetas */
+    .card-text {
+        font-size: 1.2rem;
+        color: #000000;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    /* Botones */
+    .btn {
+        font-size: 1.2rem;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 12px 30px;
+        border-radius: 50px;
+        border: solid 5px white;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn:hover {
+        transform: translateY(-2px);
+    }
+
+    .btn-primary {
+        background-color: #1a5fa8e2;
+    }
+
+    .btn-primary:hover {
+        background-color: #014792;
+    }
+
+    .btn-success {
+        background-color: #269941;
+    }
+
+    .btn-success:hover {
+        background-color: #085819;
+    }
+
+    .btn-warning {
+        background-color: #ffc107;
+    }
+
+    .btn-warning:hover {
+        background-color: #b48700;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+    }
+
+    .btn-danger:hover {
+        background-color: #a21523;
+    }
+
+    .rounded-pill {
+        border-radius: 50px;
+    }
+}

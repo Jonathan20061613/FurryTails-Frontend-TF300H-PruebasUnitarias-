@@ -1,0 +1,111 @@
+/* Quitar subrayado del enlace */
+a {
+    text-decoration: none;
+}
+
+/* Estilos generales de la sección FAQ */
+.faq {
+    padding: 60px 20px;
+    background-color: #f4f7fb;
+    text-align: center;
+    border-radius: 0px 0px 55px 55px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    margin: 0 auto;
+}
+
+/* Título principal */
+.faq h2 {
+    font-size: 2.5rem;
+    color: #000000;
+    font-family: 'Bevan', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+/* Estilos para las tarjetas */
+.faq-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Reducimos el tamaño mínimo de las tarjetas */
+    gap: 30px; /* Ajustamos el espacio entre tarjetas */
+    justify-items: center;
+}
+
+/* Tarjetas */
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 280px; /* Tamaño más pequeño para las tarjetas */
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Centra todo el texto dentro de la tarjeta */
+    padding: 20px; /* Añadido padding para un mejor espaciado */
+    height: 100%; /* Asegura que las tarjetas tengan el mismo alto */
+    justify-content: space-between; /* Se asegura que el contenido esté distribuido equitativamente */
+}
+
+/* Estilo para las imágenes de las tarjetas */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-bottom: 2px solid #eee;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Títulos dentro de las tarjetas */
+.card h3 {
+    font-size: 1.6rem;
+    color: #000000;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Bevab', sans-serif; /* Fuente de Google Fonts */
+}
+
+/* Texto dentro de las tarjetas */
+.card-text {
+    font-size: 1rem;
+    color: #0000008c;
+    line-height: 1.5;
+    word-spacing: normal; /* Eliminamos espaciado innecesario entre palabras */
+}
+
+/* Efecto de hover para las tarjetas */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card:hover h3 {
+    color: #000000;
+}
+
+.card:hover .card-text {
+    color: #000000;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .faq h2 {
+        font-size: 2rem;
+    }
+
+    .faq-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        max-width: 90%;
+    }
+}

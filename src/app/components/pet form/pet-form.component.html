@@ -1,0 +1,30 @@
+<app-nav-bar></app-nav-bar>
+
+<section class="pet-form-container">
+  <h1 class="form-title">🐾 Registrar Mascota en Adopción 🐾</h1>
+  <form class="pet-form">
+    <div class="form-group">
+      <label for="pet-image">Imagen de la Mascota</label>
+      <input type="file" id="pet-image" name="image" accept="image/*">
+    </div>
+    <div class="form-group">
+      <label for="pet-name">Nombre</label>
+      <input type="text" id="pet-name" name="name" placeholder="Nombre de la mascota">
+    </div>
+    <div class="form-group">
+      <label for="pet-age">Edad</label>
+      <input type="number" id="pet-age" name="age" placeholder="Edad en años">
+    </div>
+    <div class="form-group">
+      <label for="pet-breed">Raza</label>
+      <input type="text" id="pet-breed" name="breed" placeholder="Raza de la mascota">
+    </div>
+    <div class="form-group">
+      <label for="pet-description">Descripción</label>
+      <textarea id="pet-description" name="description" rows="4" placeholder="Describe a la mascota"></textarea>
+    </div>
+    <button type="submit" class="register-button">Registrar</button>
+  </form>
+</section>
+
+<app-footer></app-footer>

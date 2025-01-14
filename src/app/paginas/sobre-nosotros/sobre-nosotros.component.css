@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Estilo del banner */
+.banner {
+    width: 100%;
+    height: auto;
+    background: black;
+    text-align: center;
+    padding: 10vh;
+    border-radius: 20px 20px 0px 0px;
+}
+
+/* Título principal */
+.title-banner {
+    font-family: 'Bevan', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 5vh;
+    text-transform: uppercase;
+    color: white;
+}
+
+.casosexito-title {
+    font-family: 'Figtree', sans-serif;
+    font-size: 2em;
+    margin-bottom: 5vh;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilo del botón */
+.button {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border: solid 7px white;
+    background-color: black;
+    border-radius: 30px;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    line-height: normal;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    border: solid 7px white;
+    transform: scale(1.1);
+}
+
+.button:hover a {
+    color: rgb(0, 0, 0);
+}
+
+/* -------------- sobre nosotros -------------- */
+#sobreNosotros {
+    background: #f4f4f4;
+    padding: 60px 20px;
+}
+
+.contenido {
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 3em;
+    text-align: center;
+    color: black;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Bevan', sans-serif;
+}
+
+.contenido-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+    .contenido-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.imagenSobreNosotros {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.texto-sobre-nosotros p {
+    font-size: 1.3em;
+    color: #000000;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.texto-sobre-nosotros strong {
+    color: #fa1500;
+    text-transform: uppercase;
+}
+
+.button2 {
+    padding: 20px;
+    color: #ffffff;
+    background-color: rgb(0, 94, 31);
+    border-radius: 30px;
+    border: solid 7px rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+}
+
+.button2 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.button2:hover {
+    background-color: #ffffff;
+    color: #015015;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    border: solid 7px #015015;
+    transform: translateY(-2px);
+}
+
+.button2 a:hover {
+    text-decoration: none;
+    color: inherit;
+    transform: translateY(-2px);
+}
+
+/* ------- nuestros valores ------------- */
+#nuestrosValores {
+    background: #f4f4f4;
+    padding: 60px 20px;
+}
+
+.valores-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Bevan', cursive;
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.valor-item {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.valor-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.icono {
+    font-size: 4em;
+    color: #df2716;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.valor-item:hover .icono {
+    color: #b41f08;
+}
+
+h3 {
+    font-size: 1.6em;
+    color: #000000;
+    margin-bottom: 20px;
+    font-family: 'Bevan', cursive;
+}
+
+.valor-item p {
+    font-size: 1.3rem;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* Fondo colorido para cada item de valor con tonos pastel */
+.valor-item:nth-child(1) {
+    background: rgba(2, 67, 207, 0.747);
+    color: #fff;
+}
+
+.valor-item:nth-child(2) {
+    background: rgba(1, 102, 1, 0.795);
+    color: #fff;
+}
+
+.valor-item:nth-child(3) {
+    background: rgba(202, 0, 0, 0.678);
+    color: #fff;
+}
+
+/* Estilos de texto para los valores */
+.valor-item h3 {
+    color: #fff;
+}
+
+.valor-item p {
+    color: #fff;
+}
+
+/* Sección Testimonios */
+#testimonios {
+    background: #f4f4f4;
+    padding: 60px 20px;
+}
+
+.testimonios-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonios-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.testimonio-item {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.foto-cliente {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.cita {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.nombre-cliente {
+    font-size: 1.3em;
+    color: #333;
+    font-weight: 600;
+}
+
+.rol-cliente {
+    font-size: 1em;
+    color: #777;
+}
+
+/* Sección Fundadores */
+.founders-section {
+    background: #fff;
+    padding: 60px 20px;
+}
+
+.titulo-Fundadores {
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.founders-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.founder-card {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.founder-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.founder-card h3 {
+    font-size: 1.6em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.founder-card p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Media queries para hacer el contenido responsive */
+@media (max-width: 500px) {
+    .valores-grid {
+        grid-template-columns: 1fr;
+    }
+    .testimonios-grid {
+        grid-template-columns: 1fr;
+    }
+    .founders-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+    .valores-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .testimonios-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .founders-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1001px) {
+    .valores-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .testimonios-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .founders-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

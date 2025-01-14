@@ -1,0 +1,981 @@
+/* Estilo general para el contenedor principal */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* -------------------------- Sección "Sobre Nosotros" ------------------------- */
+.sobreNosotros {
+    width: 100%;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    /* Permite que los elementos se adapten */
+}
+
+.sobreNosotros .contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.texto {
+    flex: 1;
+    max-width: 600px;
+    margin: 5vw;
+    text-align: center;
+    color: #000;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.texto h1 {
+    font-family: 'Bevan', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.texto p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.texto ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.texto ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #000;
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Hover para los elementos de la lista */
+.texto ul li:hover {
+    transform: translateY(-6px);
+}
+
+/* Hover para los enlaces dentro de la lista */
+.texto ul li a {
+    font-size: xx-large;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), text-shadow 0.3s ease;
+}
+
+.texto ul li a:hover {
+    color: transparent;
+    background: linear-gradient(135deg, #2980b9, #8e44ad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    transform: translateY(-6px) scale(1.1);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.193);
+}
+
+/* Estilo para las imágenes en la sección "Sobre Nosotros" */
+.sobreNosotros .imagen {
+    flex: 1;
+    width: 100%;
+}
+
+.sobreNosotros .imagen img {
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*------------------ Sección "Nuestro Impacto" ------------------*/
+.impacto {
+    background-color: #f0f8ff;
+    /* Color suave y profesional */
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* Para centrar vertical y horizontal */
+    flex-direction: column;
+    /* Colocar elementos en columna */
+    justify-content: center;
+    /* Centrado vertical */
+    align-items: center;
+    /* Centrado horizontal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+    border-radius: 12px;
+    /* Bordes redondeados */
+}
+
+.impacto h2 {
+    font-size: 2.5rem;
+    /* Tamaño aumentado */
+    margin-bottom: 6vh;
+    color: #333;
+    /* Color de texto oscuro */
+    text-transform: uppercase;
+    /* Texto en mayúsculas */
+    letter-spacing: 2px;
+    /* Espaciado entre letras */
+    font-family: 'Bevan', cursive;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Asegura que las stats estén alineadas verticalmente */
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    /* Limitar el ancho para evitar que se extienda demasiado */
+}
+
+.stat {
+    background-color: #ffffff;
+    /* Fondo blanco */
+    padding: 20px 30px;
+    /* Más espacio interno */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    /* Sombra más pronunciada */
+    border-radius: 12px;
+    /* Bordes redondeados */
+    text-align: center;
+    flex: 1;
+    min-width: 220px;
+    /* Ajuste mínimo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Efecto de hover */
+}
+
+.stat:hover {
+    transform: translateY(-10px);
+    /* Elevación al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Sombra más pronunciada */
+}
+
+.stat h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #0078d7;
+    /* Azul moderno */
+}
+
+.stat p {
+    font-size: 1.2rem;
+    color: #555;
+    /* Texto gris suave */
+}
+
+
+/*------------------ Sección "Conoce a Nuestras Mascotas" ------------------*/
+.galeria {
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.galeria h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.galeria-imagenes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.galeria-imagenes img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.galeria .cta-btn {
+    margin-top: 20px;
+}
+
+/*------------------ Sección "Mapa de Refugios" ------------------*/
+.mapa-refugios {
+    background-color: #9acfd1b2;
+    padding: 60px 20px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 55px 55px 0 0;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra el contenido horizontalmente */
+    justify-content: center;
+    /* Centra el contenido verticalmente */
+}
+
+/* Título de la sección */
+.mapa-refugios h2 {
+    font-size: 2.5rem;
+    font-family: 'Bevan', sans-serif;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+    /* Asegura que el texto esté centrado */
+}
+
+/* Contenedor del mapa */
+.mapa-refugios .map-container {
+    width: 70vw;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    /* Centra el mapa en el contenedor */
+    align-items: center;
+    /* Centra el mapa en el contenedor */
+}
+
+/* Estilo del iframe (el mapa de Google) */
+.mapa-refugios iframe {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .mapa-refugios {
+        padding: 40px 10px;
+    }
+
+    .mapa-refugios h2 {
+        font-size: 2rem;
+    }
+
+    .mapa-refugios iframe {
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mapa-refugios h2 {
+        font-size: 1.8rem;
+    }
+
+    .mapa-refugios iframe {
+        height: 300px;
+    }
+}
+
+/*------------------ Sección "Mensaje Final" ------------------*/
+.mensaje-final {
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    color: #000000;
+    /* Texto blanco para resaltar sobre el fondo oscuro */
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    /* Ajuste automático de la altura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Centrado vertical y horizontal */
+    flex-direction: column;
+    /* Coloca los elementos en columna */
+}
+
+/* Tipografía Figtree */
+.mensaje-final blockquote {
+    font-size: 1.6rem;
+    font-family: 'Figtree', sans-serif;
+    /* Fuente Figtree */
+    padding: 40px;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 30px;
+    max-width: 80%;
+    /* Aumenta el ancho máximo para mejor ajuste */
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    color: #000000;
+    /* Texto blanco */
+    position: relative;
+    z-index: 2;
+    /* Asegura que el texto esté por encima de otros elementos */
+}
+
+/* Botón de llamada a la acción */
+.mensaje-final .cta-btn {
+    background: linear-gradient(135deg, #28a745, #21840d);
+    /* Fondo con gradiente suave */
+    font-family: 'Figtree', sans-serif;
+    color: #ffffff;
+    border: 5px solid #ffffff;
+    /* Borde más sutil */
+    padding: 18px 36px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    /* Transición más suave y larga */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+    margin-top: 20px;
+    /* Espacio entre el bloque de texto y el botón */
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    /* Para ocultar cualquier parte del borde en la animación */
+}
+
+/* Efecto Hover */
+.mensaje-final .cta-btn:hover {
+    background: linear-gradient(135deg, #147825, #1b6c2f);
+    /* Color más oscuro al pasar el mouse */
+    transform: translateY(-7px);
+    /* Efecto de elevación más fuerte */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    /* Sombra más intensa al hacer hover */
+}
+
+/* Animación adicional para un efecto de "glow" */
+.mensaje-final .cta-btn::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(135deg, #28a745, #21840d);
+    border-radius: 50px;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.mensaje-final .cta-btn:hover::before {
+    opacity: 1;
+    /* Hace que el borde "brille" cuando el botón se activa */
+    transform: scale(1.1);
+    /* Escala el borde para crear el efecto de resplandor */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .mensaje-final blockquote {
+        font-size: 1.4rem;
+        max-width: 90%;
+        /* Ajuste para pantallas más pequeñas */
+    }
+
+    .mensaje-final .cta-btn {
+        padding: 15px 25px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Responsividad para dispositivos más pequeños */
+@media (max-width: 480px) {
+    .mensaje-final blockquote {
+        font-size: 1.2rem;
+        max-width: 90%;
+        /* Ajuste para pantallas más pequeñas */
+    }
+
+    .mensaje-final .cta-btn {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}
+
+
+
+/*------------------ Sección "Contacto" ------------------*/
+.contacto {
+    background-color: #e9ecef;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contacto p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.contacto .cta-btn {
+    margin-top: 20px;
+}
+
+
+@media (max-width: 500px) {
+    .sobreNosotros .contenido {
+        flex-direction: column;
+        /* Cambia a disposición en columna */
+    }
+
+    /* -------------------------- Sección "Sobre Nosotros" ------------------------- */
+    .sobreNosotros {
+        width: 100%;
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        flex-wrap: wrap;
+        /* Permite que los elementos se adapten */
+    }
+
+    .sobreNosotros .contenido {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .texto {
+        flex: 1;
+        max-width: 600px;
+        margin: 5vw;
+        text-align: center;
+        color: #000;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .texto h1 {
+        font-family: 'Bevan', cursive;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #000;
+    }
+
+    .texto p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        margin-bottom: 20px;
+        color: #000;
+    }
+
+    .texto ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .texto ul li {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        color: #000;
+        transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    /* Hover para los elementos de la lista */
+    .texto ul li:hover {
+        transform: translateY(-6px);
+    }
+
+    /* Hover para los enlaces dentro de la lista */
+    .texto ul li a {
+        font-size: xx-large;
+        font-weight: bold;
+        color: #000;
+        text-decoration: none;
+        display: inline-block;
+        transition: color 0.3s ease, transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), text-shadow 0.3s ease;
+    }
+
+    .texto ul li a:hover {
+        color: transparent;
+        background: linear-gradient(135deg, #2980b9, #8e44ad);
+        -webkit-background-clip: text;
+        background-clip: text;
+        transform: translateY(-6px) scale(1.1);
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.193);
+    }
+
+    /* Estilo para las imágenes en la sección "Sobre Nosotros" */
+    .sobreNosotros .imagen {
+        flex: 1;
+        width: 100%;
+    }
+
+    .sobreNosotros .imagen img {
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /*------------------ Sección "Nuestro Impacto" ------------------*/
+    .impacto {
+        background-color: #f0f8ff;
+        /* Color suave y profesional */
+        padding: 40px 20px;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        display: flex;
+        /* Para centrar vertical y horizontal */
+        flex-direction: column;
+        /* Colocar elementos en columna */
+        justify-content: center;
+        /* Centrado vertical */
+        align-items: center;
+        /* Centrado horizontal */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Sombra sutil */
+        border-radius: 12px;
+        /* Bordes redondeados */
+    }
+
+    .impacto h2 {
+        font-size: 2.5rem;
+        /* Tamaño aumentado */
+        margin-bottom: 6vh;
+        color: #333;
+        /* Color de texto oscuro */
+        text-transform: uppercase;
+        /* Texto en mayúsculas */
+        letter-spacing: 2px;
+        /* Espaciado entre letras */
+        font-family: 'Bevan', cursive;
+    }
+
+    .stats {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* Asegura que las stats estén alineadas verticalmente */
+        gap: 40px;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        /* Limitar el ancho para evitar que se extienda demasiado */
+    }
+
+    .stat {
+        background-color: #ffffff;
+        /* Fondo blanco */
+        padding: 20px 30px;
+        /* Más espacio interno */
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        /* Sombra más pronunciada */
+        border-radius: 12px;
+        /* Bordes redondeados */
+        text-align: center;
+        flex: 1;
+        min-width: 220px;
+        /* Ajuste mínimo */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        /* Efecto de hover */
+    }
+
+    .stat:hover {
+        transform: translateY(-10px);
+        /* Elevación al pasar el mouse */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        /* Sombra más pronunciada */
+    }
+
+    .stat h3 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: #0078d7;
+        /* Azul moderno */
+    }
+
+    .stat p {
+        font-size: 1.2rem;
+        color: #555;
+        /* Texto gris suave */
+    }
+}
+
+@media (max-width: 1000px) {
+    .sobreNosotros .contenido {
+        flex-direction: column;
+        /* Cambia a disposición en columna */
+    }
+
+    /* -------------------------- Sección "Sobre Nosotros" ------------------------- */
+    .sobreNosotros {
+        width: 100%;
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        flex-wrap: wrap;
+        /* Permite que los elementos se adapten */
+    }
+
+    .sobreNosotros .contenido {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .texto {
+        flex: 1;
+        max-width: 600px;
+        margin: 5vw;
+        text-align: center;
+        color: #000;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .texto h1 {
+        font-family: 'Bevan', cursive;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #000;
+    }
+
+    .texto p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        margin-bottom: 20px;
+        color: #000;
+    }
+
+    .texto ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .texto ul li {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        color: #000;
+        transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    /* Hover para los elementos de la lista */
+    .texto ul li:hover {
+        transform: translateY(-6px);
+    }
+
+    /* Hover para los enlaces dentro de la lista */
+    .texto ul li a {
+        font-size: xx-large;
+        font-weight: bold;
+        color: #000;
+        text-decoration: none;
+        display: inline-block;
+        transition: color 0.3s ease, transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), text-shadow 0.3s ease;
+    }
+
+    .texto ul li a:hover {
+        color: transparent;
+        background: linear-gradient(135deg, #2980b9, #8e44ad);
+        -webkit-background-clip: text;
+        background-clip: text;
+        transform: translateY(-6px) scale(1.1);
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.193);
+    }
+
+    /* Estilo para las imágenes en la sección "Sobre Nosotros" */
+    .sobreNosotros .imagen {
+        flex: 1;
+        width: 100%;
+    }
+
+    .sobreNosotros .imagen img {
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /*------------------ Sección "Nuestro Impacto" ------------------*/
+    .impacto {
+        background-color: #f0f8ff;
+        /* Color suave y profesional */
+        padding: 40px 20px;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        display: flex;
+        /* Para centrar vertical y horizontal */
+        flex-direction: column;
+        /* Colocar elementos en columna */
+        justify-content: center;
+        /* Centrado vertical */
+        align-items: center;
+        /* Centrado horizontal */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Sombra sutil */
+        border-radius: 12px;
+        /* Bordes redondeados */
+    }
+
+    .impacto h2 {
+        font-size: 2.5rem;
+        /* Tamaño aumentado */
+        margin-bottom: 6vh;
+        color: #333;
+        /* Color de texto oscuro */
+        text-transform: uppercase;
+        /* Texto en mayúsculas */
+        letter-spacing: 2px;
+        /* Espaciado entre letras */
+        font-family: 'Bevan', cursive;
+    }
+
+    .stats {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* Asegura que las stats estén alineadas verticalmente */
+        gap: 40px;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        /* Limitar el ancho para evitar que se extienda demasiado */
+    }
+
+    .stat {
+        background-color: #ffffff;
+        /* Fondo blanco */
+        padding: 20px 30px;
+        /* Más espacio interno */
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        /* Sombra más pronunciada */
+        border-radius: 12px;
+        /* Bordes redondeados */
+        text-align: center;
+        flex: 1;
+        min-width: 220px;
+        /* Ajuste mínimo */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        /* Efecto de hover */
+    }
+
+    .stat:hover {
+        transform: translateY(-10px);
+        /* Elevación al pasar el mouse */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        /* Sombra más pronunciada */
+    }
+
+    .stat h3 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: #0078d7;
+        /* Azul moderno */
+    }
+
+    .stat p {
+        font-size: 1.2rem;
+        color: #555;
+        /* Texto gris suave */
+    }
+}
+
+@media (max-width: 1500px) {
+    .sobreNosotros .contenido {
+        flex-direction: column;
+        /* Cambia a disposición en columna */
+    }
+
+    /* -------------------------- Sección "Sobre Nosotros" ------------------------- */
+    .sobreNosotros {
+        width: 100%;
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        flex-wrap: wrap;
+        /* Permite que los elementos se adapten */
+    }
+
+    .sobreNosotros .contenido {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .texto {
+        flex: 1;
+        max-width: 600px;
+        margin: 5vw;
+        text-align: center;
+        color: #000;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .texto h1 {
+        font-family: 'Bevan', cursive;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #000;
+    }
+
+    .texto p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        margin-bottom: 20px;
+        color: #000;
+    }
+
+    .texto ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .texto ul li {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        color: #000;
+        transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    /* Hover para los elementos de la lista */
+    .texto ul li:hover {
+        transform: translateY(-6px);
+    }
+
+    /* Hover para los enlaces dentro de la lista */
+    .texto ul li a {
+        font-size: xx-large;
+        font-weight: bold;
+        color: #000;
+        text-decoration: none;
+        display: inline-block;
+        transition: color 0.3s ease, transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), text-shadow 0.3s ease;
+    }
+
+    .texto ul li a:hover {
+        color: transparent;
+        background: linear-gradient(135deg, #2980b9, #8e44ad);
+        -webkit-background-clip: text;
+        background-clip: text;
+        transform: translateY(-6px) scale(1.1);
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.193);
+    }
+
+    /* Estilo para las imágenes en la sección "Sobre Nosotros" */
+    .sobreNosotros .imagen {
+        flex: 1;
+        width: 100%;
+    }
+
+    .sobreNosotros .imagen img {
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /*------------------ Sección "Nuestro Impacto" ------------------*/
+    .impacto {
+        background-color: #f0f8ff;
+        /* Color suave y profesional */
+        padding: 40px 20px;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        display: flex;
+        /* Para centrar vertical y horizontal */
+        flex-direction: column;
+        /* Colocar elementos en columna */
+        justify-content: center;
+        /* Centrado vertical */
+        align-items: center;
+        /* Centrado horizontal */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Sombra sutil */
+        border-radius: 12px;
+        /* Bordes redondeados */
+    }
+
+    .impacto h2 {
+        font-size: 2.5rem;
+        /* Tamaño aumentado */
+        margin-bottom: 6vh;
+        color: #333;
+        /* Color de texto oscuro */
+        text-transform: uppercase;
+        /* Texto en mayúsculas */
+        letter-spacing: 2px;
+        /* Espaciado entre letras */
+        font-family: 'Bevan', cursive;
+    }
+
+    .stats {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* Asegura que las stats estén alineadas verticalmente */
+        gap: 40px;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        /* Limitar el ancho para evitar que se extienda demasiado */
+    }
+
+    .stat {
+        background-color: #ffffff;
+        /* Fondo blanco */
+        padding: 20px 30px;
+        /* Más espacio interno */
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        /* Sombra más pronunciada */
+        border-radius: 12px;
+        /* Bordes redondeados */
+        text-align: center;
+        flex: 1;
+        min-width: 220px;
+        /* Ajuste mínimo */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        /* Efecto de hover */
+    }
+
+    .stat:hover {
+        transform: translateY(-10px);
+        /* Elevación al pasar el mouse */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        /* Sombra más pronunciada */
+    }
+
+    .stat h3 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: #0078d7;
+        /* Azul moderno */
+    }
+
+    .stat p {
+        font-size: 1.2rem;
+        color: #555;
+        /* Texto gris suave */
+    }
+}

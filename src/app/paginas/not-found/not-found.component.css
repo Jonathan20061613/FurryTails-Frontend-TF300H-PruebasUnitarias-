@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo dinámico */
+main {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #2980b9, #8e44ad);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center; /* Asegura que todo el texto dentro esté centrado */
+}
+
+/* Animación del fondo */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Estilos de la sección de error 404 */
+.error-404 {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 600px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido dentro del contenedor */
+    justify-content: center;
+    border-radius: 10px;
+}
+
+/* Títulos */
+.title-404 {
+    font-family: 'Bevan', cursive; /* Aplica la fuente Bevan */
+    font-size: 3.5em;
+    color: #fff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Texto informativo */
+.message-404 {
+    font-family: 'Arial', sans-serif; /* Aplica fuente Arial */
+    font-size: 1.3em;
+    color: #ecf0f1;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    animation: fadeIn 2s ease-out;
+    width: 100%;
+}
+
+/* Estilo del número 404 */
+.number-404 {
+    font-size: 12em; /* Número 404 muy grande */
+    font-weight: bold;
+    background: linear-gradient(135deg, #2980b9, #8e44ad);
+    letter-spacing: 10px;
+    margin: 30px 0;
+    animation: bounceIn 2s infinite;
+    border-radius: 20px;
+}
+
+/* Estilo del botón */
+.btn-home {
+    font-size: 1.4em;
+    padding: 15px 35px;
+    color: #fff;
+    background-color: #ffd52e;
+    border: none;
+    border: solid 5px #ffffff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 25px;
+}
+
+.btn-home:hover {
+    background-color: #eec01d;
+    transform: translateY(-10px);
+    color: #fdfdfd;
+    border: solid 5px #ffffff;
+}
+
+/* Contenedor */
+.container {
+    width: 100%;
+}

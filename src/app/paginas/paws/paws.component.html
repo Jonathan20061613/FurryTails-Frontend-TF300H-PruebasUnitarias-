@@ -1,0 +1,108 @@
+<app-nav-bar></app-nav-bar>
+<section class="intro section-header">
+  <img src="assets/pawsAssets/ourPaws.jpg" class="img-fluid mx-auto d-block" alt="Imagen bienvenida" />
+  <h2 class="title-paws">¡Bienvenido a Furry Tails!</h2>
+  <p class="msj">
+      En Furry Tails, nos dedicamos a conectar mascotas en busca de un hogar amoroso con familias que desean
+      darles una segunda oportunidad. Explora nuestras opciones de adopción y encuentra el compañero perfecto
+      para ti.
+  </p>
+  
+</section>
+<!-- <app-pet-card></app-pet-card> -->
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-4" *ngFor="let img of images">
+      <img
+        [src]="img.src"
+        class="img-fluid rounded-corners"
+        (click)="openModal(img)"
+        alt="Imagen"
+        style="cursor: pointer"
+      />
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  tabindex="-1"
+  id="imageModal"
+  aria-labelledby="modalTitle"
+  aria-hidden="true"
+  #imageModal
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-light">
+        <h5 class="modal-title text-center" id="modalTitle">{{ modalData.title }}</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="w-100 text-start">{{ modalData.content }}</p>
+        <div class="d-flex justify-content-center align-items-center">
+          <!-- Información de Nombre, Edad, etc. alineada a la izquierda -->
+          <div class="text-start me-3">
+            <p class="mb-0"><strong>Nombre:</strong> {{ modalData.name }}</p>
+            <p class="mb-0"><strong>Edad:</strong> {{ modalData.age }}</p>
+            <p class="mb-0"><strong>Raza:</strong> {{ modalData.race }}</p>
+            <p class="mb-0"><strong>Tamaño:</strong> {{ modalData.size }}</p>
+            <p class="mb-0"><strong>Sexo:</strong> {{ modalData.gender }}</p>
+          </div>
+          
+          <!-- Imagen redonda -->
+          <div>
+            <img [src]="modalData.src2" class="img-fluid rounded-circle" alt="Imagen" style="width: 150px; height: 150px; object-fit: cover;"/>
+          </div>
+        </div>
+        <div class="d-flex align-items-center">
+          <div style="padding-left: 40px; padding-right: 40px; margin-top: 10px;" class="text-start w-100">
+            <p>{{modalData.content2}}</p>
+          </div>
+        </div>
+        
+        
+        
+
+        <div class="d-flex justify-content-between mt-4 px-4">
+          <!-- Botón de Adoptar, solo se muestra si adopt es false -->
+          <button *ngIf="!modalData.adopt" 
+                  class="btn btn-success rounded-pill" 
+                  type="button"  
+                  id="closeModal" 
+                  data-bs-dismiss="modal"  
+                  #closebutton 
+                  (click)="adopt()">
+            Adóptame
+          </button>
+          
+          <!-- Botón de Adoptado, solo se muestra si adopt es true -->
+          <button *ngIf="modalData.adopt" 
+                  class="btn btn-secondary rounded-pill" 
+                  type="button">
+            Adoptado
+          </button>
+        
+          <!-- Botón de Contactar, siempre se muestra -->
+          <button class="btn" 
+                  type="button" 
+                  style="background-color: #6f42c1; color: white; border-radius: 50px;">
+            Contáctanos
+          </button>
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+</div>
+
+
+<app-footer></app-footer>

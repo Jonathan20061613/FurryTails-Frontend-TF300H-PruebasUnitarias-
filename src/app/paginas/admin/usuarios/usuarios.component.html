@@ -1,0 +1,20 @@
+<aside class="sidebar">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo" class="mi-logo" />
+    </div>
+    <div class="menu-sidebar">
+      <h2 class=" menu">Centro de administración</h2>
+      <nav>
+        <ul>
+          <a routerLink="/admin"> 
+            <li>Gestión de mascotas</li>
+          </a>
+         <a routerLink="/admin/usuarios">
+          <li>Gestión de usuarios</li>
+        </a>
+        </ul>
+      </nav>
+      <button (click)="loginout()" class="logout-btn">Cerrar sesión</button>
+    </div>
+
+  </aside>

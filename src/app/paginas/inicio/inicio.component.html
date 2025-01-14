@@ -1,0 +1,107 @@
+<app-nav-bar></app-nav-bar>
+<app-banner></app-banner>
+
+<main>
+    <!-- Sección "Sobre Nosotros" -->
+    <section class="sobreNosotros">
+        <div class="contenido">
+            <!-- Contenedor del texto -->
+            <div class="texto">
+                <h1>Furry Tails</h1>
+                <p>
+                    En nuestra plataforma, <strong>conectamos corazones</strong> con un propósito claro: hacer que el
+                    proceso de adopción sea <strong>simple, rápido y seguro</strong>, asegurando al mismo tiempo el
+                    <strong>bienestar y protección</strong> de cada animal.
+                </p>
+                <p>
+                    Creemos profundamente que cada mascota merece un hogar lleno de amor, y cada familia, la oportunidad
+                    de vivir la compañía incondicional de un amigo fiel.
+                </p>
+                <ul>
+                    <li>
+                        <a href="#">Adopción Fácil</a>
+                        <p>Un proceso ágil y seguro para ayudarte a encontrar a tu nueva mascota con confianza.</p>
+                    </li>
+                    <li>
+                        <a href="#">Protección Animal</a>
+                        <p>Garantizamos el respeto y el cuidado de las mascotas mientras esperan un hogar lleno de
+                            cariño.</p>
+                    </li>
+                    <li>
+                        <a href="#">Apoyo Continuo</a>
+                        <p>Estamos a tu lado en todo momento, desde la adopción hasta el cuidado de tu nueva mascota.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Contenedor de la imagen -->
+            <div class="imagen">
+                <img src="assets/sobreNosotros/imgSobreNosotros.jpg" alt="Sobre Nosotros">
+            </div>
+        </div>
+    </section>
+
+    <app-cards2></app-cards2>
+
+    <!-- Sección "Nuestro Impacto" -->
+    <section class="impacto" aria-labelledby="impacto-title">
+        <h2 id="impacto-title">📊 Nuestro impacto</h2>
+        <div class="stats">
+            <div class="stat">
+                <h3>+500</h3>
+                <p>Adopciones exitosas</p>
+            </div>
+            <div class="stat">
+                <h3>+200</h3>
+                <p>Animales rescatados este año</p>
+            </div>
+            <div class="stat">
+                <h3>50</h3>
+                <p>Refugios aliados</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección "Historias de Adopción" -->
+    <app-card5></app-card5>
+
+    <!-- Transforma una vida hoy -->
+    <app-card4></app-card4>
+
+    <!-- Sección "Conoce a nuestras mascotas" -->
+    <section class="galeria" aria-labelledby="galeria-title">
+        <h2 id="galeria-title">🐾 Conoce a nuestras mascotas 🐾</h2>
+        <div class="galeria-imagenes">
+            <img src="mascota1.jpg" alt="Perro feliz esperando adopción">
+            <img src="mascota2.jpg" alt="Gato curioso mirando a la cámara">
+            <img src="mascota3.jpg" alt="Perro jugando en el jardín">
+        </div>
+        <button class="cta-btn">Ver más mascotas</button>
+    </section>
+    
+    <app-cards></app-cards>
+
+    <app-cards3></app-cards3>
+    
+    <!-- Sección "Mapa de Refugios" -->
+    <section class="mapa-refugios" aria-labelledby="mapa-title">
+        <h2 id="mapa-title">📍 Encuentra un refugio cerca de ti</h2>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d63628.40702146718!2d-74.1462482!3d4.6341088!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1733793609745!5m2!1ses!2sco"
+                width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Sección "Mensaje Final" -->
+    <section class="mensaje-final">
+        <blockquote>
+            "Adoptar un amigo peludo es un acto de amor, compasión y generosidad. ¡Únete a nuestra causa y da una
+            segunda oportunidad a un ser maravilloso!".
+        </blockquote>
+        <button class="cta-btn">Haz tu aporte</button>
+    </section>
+</main>
+
+<app-footer></app-footer>

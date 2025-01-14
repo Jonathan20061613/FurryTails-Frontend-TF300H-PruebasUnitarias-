@@ -1,0 +1,78 @@
+.registration-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Figtree', sans-serif;
+}
+
+.form-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Bevan', cursive;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 1rem;
+  color: #555;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #0078d7;
+}
+
+.btn-primary {
+  background-color: #0c6618;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.384);
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background-color: #094f13;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: -10px;
+}
+
+@media (max-width: 576px) {
+  .registration-form {
+    padding: 20px;
+  }
+
+  .btn-primary {
+    font-size: 14px;
+  }
+}

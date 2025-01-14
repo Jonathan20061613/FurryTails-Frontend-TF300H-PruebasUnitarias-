@@ -1,0 +1,466 @@
+.banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    height: auto; /* Ocupa toda la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 5%; /* Espaciado interno dinámico */
+    box-sizing: border-box;
+}
+
+.banner-content {
+    width: 60%; /* Ajusta el ancho dinámicamente */
+    height: auto;
+    padding: 10%; /* Padding proporcional al tamaño */
+    background-color: rgba(255, 255, 255, 0.911); /* Fondo oscuro semitransparente */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.534); /* Sombra suave */
+}
+
+.banner h1 {
+    font-size: calc(2rem + 2vw); /* Ajusta el tamaño de fuente según el ancho de la pantalla */
+    margin-bottom: 20px;
+    font-family: 'Bevan', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.motivational-text {
+    font-size: calc(1rem + 0.5vw); /* Escala el texto dinámicamente */
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    color: #000000;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #083e6b;
+    border: solid 5px white;
+    color: white;
+    font-size: calc(1rem + 0.2vw); /* Escala el botón proporcionalmente */
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.315);
+}
+
+.logo1{
+    width: 100%;
+    height: auto;
+    margin-bottom: 5vh;
+}
+
+.cta-btn:hover {
+    background-color: #ffffff;
+    border: solid 5px #083e6b;
+    color: #083e6b;
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.315);
+}
+
+.pab1{
+    color: #04345c;
+}
+
+.pab2{
+    color: #EA56AF;
+}
+
+.pab3{
+    color: #067518;
+}
+
+.pab4{
+    color: #FFD235;
+}
+
+.pab5{
+    color: #3488d1;
+}
+
+.logo1{
+    margin-bottom: 20px;
+} 
+
+
+
+
+/* Responsividad */
+@media (max-width: 400px) {
+    .banner {
+        width: 100%;
+        height: auto;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+        height: auto; /* Ocupa toda la altura de la ventana */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        padding: 5%; /* Espaciado interno dinámico */
+        box-sizing: border-box;
+    }
+    
+    .banner-content {
+        width: 60%; /* Ajusta el ancho dinámicamente */
+        height: auto;
+        padding: 10%; /* Padding proporcional al tamaño */
+        background-color: rgba(255, 255, 255, 0.911); /* Fondo oscuro semitransparente */
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.534); /* Sombra suave */
+    }
+    
+    .banner h1 {
+        font-size: calc(2rem + 2vw); /* Ajusta el tamaño de fuente según el ancho de la pantalla */
+        margin-bottom: 20px;
+        font-family: 'Bevan', sans-serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    
+    .motivational-text {
+        font-size: calc(1rem + 0.5vw); /* Escala el texto dinámicamente */
+        font-family: 'Poppins', sans-serif;
+        font-style: italic;
+        margin-bottom: 30px;
+        line-height: 1.8;
+        color: #000000;
+    }
+    
+    .cta-btn {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background-color: #083e6b;
+        border: solid 5px white;
+        color: white;
+        font-size: calc(1rem + 0.2vw); /* Escala el botón proporcionalmente */
+        font-weight: bold;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.315);
+    }
+    
+    .logo1{
+        width: 100%;
+        height: auto;
+        margin-bottom: 5vh;
+    }
+    
+    .cta-btn:hover {
+        background-color: #ffffff;
+        border: solid 5px #083e6b;
+        color: #083e6b;
+        transform: scale(1.05);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.315);
+    }
+}
+
+@media (max-width: 1000px) {
+    .banner {
+        width: 100%;
+        height: auto;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+        height: auto; /* Ocupa toda la altura de la ventana */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        padding: 5%; /* Espaciado interno dinámico */
+        box-sizing: border-box;
+    }
+    
+    .banner-content {
+        width: 60%; /* Ajusta el ancho dinámicamente */
+        height: auto;
+        padding: 10%; /* Padding proporcional al tamaño */
+        background-color: rgba(255, 255, 255, 0.911); /* Fondo oscuro semitransparente */
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.534); /* Sombra suave */
+    }
+    
+    .banner h1 {
+        font-size: calc(2rem + 2vw); /* Ajusta el tamaño de fuente según el ancho de la pantalla */
+        margin-bottom: 20px;
+        font-family: 'Bevan', sans-serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    
+    .motivational-text {
+        font-size: calc(1rem + 0.5vw); /* Escala el texto dinámicamente */
+        font-family: 'Poppins', sans-serif;
+        font-style: italic;
+        margin-bottom: 30px;
+        line-height: 1.8;
+        color: #000000;
+    }
+    
+    .cta-btn {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background-color: #083e6b;
+        border: solid 5px white;
+        color: white;
+        font-size: calc(1rem + 0.2vw); /* Escala el botón proporcionalmente */
+        font-weight: bold;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.315);
+    }
+    
+    .logo1{
+        width: 100%;
+        height: auto;
+        margin-bottom: 5vh;
+    }
+    
+    .cta-btn:hover {
+        background-color: #ffffff;
+        border: solid 5px #083e6b;
+        color: #083e6b;
+        transform: scale(1.05);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.315);
+    }
+}
+
+
+@media (max-width: 1500px) {
+    .banner {
+        width: 100%;
+        height: auto;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+        height: auto; /* Ocupa toda la altura de la ventana */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        padding: 5%; /* Espaciado interno dinámico */
+        box-sizing: border-box;
+    }
+    
+    .banner-content {
+        width: 60%; /* Ajusta el ancho dinámicamente */
+        height: auto;
+        padding: 10%; /* Padding proporcional al tamaño */
+        background-color: rgba(255, 255, 255, 0.911); /* Fondo oscuro semitransparente */
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.534); /* Sombra suave */
+    }
+    
+    .banner h1 {
+        font-size: calc(2rem + 2vw); /* Ajusta el tamaño de fuente según el ancho de la pantalla */
+        margin-bottom: 20px;
+        font-family: 'Bevan', sans-serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    
+    .motivational-text {
+        font-size: calc(1rem + 0.5vw); /* Escala el texto dinámicamente */
+        font-family: 'Poppins', sans-serif;
+        font-style: italic;
+        margin-bottom: 30px;
+        line-height: 1.8;
+        color: #000000;
+    }
+    
+    .cta-btn {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background-color: #083e6b;
+        border: solid 5px white;
+        color: white;
+        font-size: calc(1rem + 0.2vw); /* Escala el botón proporcionalmente */
+        font-weight: bold;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.315);
+    }
+    
+    .logo1{
+        width: 100%;
+        height: auto;
+        margin-bottom: 5vh;
+    }
+    
+    .cta-btn:hover {
+        background-color: #ffffff;
+        border: solid 5px #083e6b;
+        color: #083e6b;
+        transform: scale(1.05);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.315);
+    }
+}
+
+
+@media (max-width: 2000px) {
+    .banner {
+        width: 100%;
+        height: auto;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+        height: auto; /* Ocupa toda la altura de la ventana */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        padding: 5%; /* Espaciado interno dinámico */
+        box-sizing: border-box;
+    }
+    
+    .banner-content {
+        width: 60%; /* Ajusta el ancho dinámicamente */
+        height: auto;
+        padding: 10%; /* Padding proporcional al tamaño */
+        background-color: rgba(255, 255, 255, 0.911); /* Fondo oscuro semitransparente */
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.534); /* Sombra suave */
+    }
+    
+    .banner h1 {
+        font-size: calc(2rem + 2vw); /* Ajusta el tamaño de fuente según el ancho de la pantalla */
+        margin-bottom: 20px;
+        font-family: 'Bevan', sans-serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    
+    .motivational-text {
+        font-size: calc(1rem + 0.5vw); /* Escala el texto dinámicamente */
+        font-family: 'Poppins', sans-serif;
+        font-style: italic;
+        margin-bottom: 30px;
+        line-height: 1.8;
+        color: #000000;
+    }
+    
+    .cta-btn {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background-color: #083e6b;
+        border: solid 5px white;
+        color: white;
+        font-size: calc(1rem + 0.2vw); /* Escala el botón proporcionalmente */
+        font-weight: bold;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.315);
+    }
+    
+    .logo1{
+        width: 100%;
+        height: auto;
+        margin-bottom: 5vh;
+    }
+    
+    .cta-btn:hover {
+        background-color: #ffffff;
+        border: solid 5px #083e6b;
+        color: #083e6b;
+        transform: scale(1.05);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.315);
+    }
+}
+
+
+@media (max-width: 2500px) {
+    .banner {
+        width: 100%;
+        height: auto;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+        height: auto; /* Ocupa toda la altura de la ventana */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        padding: 5%; /* Espaciado interno dinámico */
+        box-sizing: border-box;
+    }
+    
+    .banner-content {
+        width: 60%; /* Ajusta el ancho dinámicamente */
+        height: auto;
+        padding: 10%; /* Padding proporcional al tamaño */
+        background-color: rgba(255, 255, 255, 0.911); /* Fondo oscuro semitransparente */
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.534); /* Sombra suave */
+    }
+
+    .banner h1 {
+        font-size: calc(2rem + 2vw); /* Ajusta el tamaño de fuente según el ancho de la pantalla */
+        margin-bottom: 20px;
+        font-family: 'Bevan', sans-serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    
+    .motivational-text {
+        font-size: calc(1rem + 0.5vw); /* Escala el texto dinámicamente */
+        font-family: 'Poppins', sans-serif;
+        font-style: italic;
+        margin-bottom: 30px;
+        line-height: 1.8;
+        color: #000000;
+    }
+    
+    .cta-btn {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background-color: #083e6b;
+        border: solid 5px white;
+        color: white;
+        font-size: calc(1rem + 0.2vw); /* Escala el botón proporcionalmente */
+        font-weight: bold;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.315);
+    }
+    
+    .logo1{
+        width: 100%;
+        height: auto;
+        margin-bottom: 5vh;
+    }
+    
+    .cta-btn:hover {
+        background-color: #ffffff;
+        border: solid 5px #083e6b;
+        color: #083e6b;
+        transform: scale(1.05);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.315);
+    }
+}
