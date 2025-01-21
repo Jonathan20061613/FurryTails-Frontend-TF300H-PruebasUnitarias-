@@ -83,6 +83,9 @@ Este repositorio presenta la solución para las pruebas unitarias del frontend d
     - Actualización de datos de mascotas.
     - Eliminación de una mascota.
 
+
+![PRUEBA DE USUARIO](![alt text](image.png))
+
 ### Autoría
 Este proyecto fue desarrollado como material educativo para prácticas de pruebas unitarias con Jasmine y Karma en aplicaciones Angular +17.
 
