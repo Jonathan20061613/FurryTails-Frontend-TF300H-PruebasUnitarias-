@@ -1,10 +1,10 @@
-# FrontEndPruebaLogin_2025
+# Frontend Pruebas Unitarias
 
 Este repositorio presenta la solución para las pruebas unitarias del frontend de una aplicación de login (usuario y administrador) y gestión de usuarios y mascotas, desarrollada con Angular +17.
 
 ## Objetivo del Repositorio
 - Reforzar los conocimientos adquiridos sobre desarrollo de aplicaciones Front-End con Angular.
-- Proporcionar una guía práctica para implementar pruebas unitarias con Jasmine.
+- Proporcionar una guía práctica para implementar pruebas unitarias con Jasmine y Karma.
 - Enseñar el uso de Karma para realizar pruebas en el navegador.
 - Fomentar buenas prácticas en el desarrollo de aplicaciones robustas y testeables en Angular.
 
