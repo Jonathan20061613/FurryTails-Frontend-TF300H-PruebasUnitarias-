@@ -37,5 +37,4 @@ export class UsuariosService {
   deleteUsuarios(id: string) {
     return this._httpClient.delete(this.URL_USUARIOS + '/eliminar/' + id);
   }
-
 }

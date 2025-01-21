@@ -1,92 +1,119 @@
-import { TestBed } from '@angular/core/testing'; 
-import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+import { TestBed } from '@angular/core/testing';
 import { MascotasService } from './mascotas.service';
+import { HttpTestingController, provideHttpClientTesting } from '@angular/common/http/testing';
+import { provideHttpClient } from '@angular/common/http';
 import { Mascotas } from '../interfaces/mascotas';
 
 describe('MascotasService', () => {
   let service: MascotasService;
-  let httpTestingController: HttpTestingController;
+  let httpMock: HttpTestingController;
+
+  const apiUrl = 'http://localhost:3000/mascotas/';
 
   const mockMascota: Mascotas = {
-    _id: '1',
-    imagen: 'url_de_imagen',
+    imagen: 'imagen.jpg',
     nombre: 'Firulais',
-    raza: 'Perro',
+    raza: 'Golden Retriever',
     edad: 3,
     propietario: 'Juan Pérez',
     estaAdoptado: false,
+    _id: '123456'
   };
-
-  const URL_MASCOTAS = 'http://localhost:3000/mascotas';
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule],
-      providers: [MascotasService],
+      providers: [
+        MascotasService,
+        provideHttpClient(),
+        provideHttpClientTesting()
+      ]
     });
+
     service = TestBed.inject(MascotasService);
-    httpTestingController = TestBed.inject(HttpTestingController);
+    httpMock = TestBed.inject(HttpTestingController);
   });
 
   afterEach(() => {
-    httpTestingController.verify();
+    httpMock.verify(); // Verifica que no haya solicitudes pendientes
   });
 
-  it('should be created', () => {
-    expect(service).toBeTruthy();
-  });
+  // Prueba POST: Crear mascota
+  it('debería realizar una petición POST para crear una mascota', () => {
+    const mockResponse = {
+      mensaje: 'Mascota se agregó exitosamente',
+      mascota: mockMascota
+    };
 
-  it('should call postMascota and return the created mascota', () => {
     service.postMascota(mockMascota).subscribe((res) => {
-      expect(res).toEqual(mockMascota);
+      expect(res).toEqual(mockResponse);
     });
 
-    const req = httpTestingController.expectOne(`${URL_MASCOTAS}/`);
+    const req = httpMock.expectOne(apiUrl);
     expect(req.request.method).toBe('POST');
-    req.flush(mockMascota);
+    req.flush(mockResponse);
   });
 
-  it('should call getMascotas and return all mascotas', () => {
-    const mockMascotas: Mascotas[] = [mockMascota];
+  // Prueba GET: Obtener todas las mascotas
+  it('debería realizar una petición GET para obtener todas las mascotas', () => {
+    const mockResponse = {
+      mensaje: 'Mascotas obtenidas exitosamente',
+      mascotas: [mockMascota]
+    };
 
     service.getMascotas().subscribe((res) => {
-      expect(res).toEqual(mockMascotas);
+      expect(res).toEqual(mockResponse);
     });
 
-    const req = httpTestingController.expectOne(`${URL_MASCOTAS}/`);
+    const req = httpMock.expectOne(apiUrl);
     expect(req.request.method).toBe('GET');
-    req.flush(mockMascotas);
+    req.flush(mockResponse);
   });
 
-  it('should call getMascota and return a single mascota', () => {
+  // Prueba GET: Obtener una mascota por ID
+  it('debería realizar una petición GET para obtener una mascota por ID', () => {
+    const mockResponse = {
+      mensaje: 'Mascota obtenida exitosamente',
+      mascota: mockMascota
+    };
+
     service.getMascota(mockMascota._id).subscribe((res) => {
-      expect(res).toEqual(mockMascota);
+      expect(res).toEqual(mockResponse);
     });
 
-    const req = httpTestingController.expectOne(`${URL_MASCOTAS}/${mockMascota._id}`);
+    const req = httpMock.expectOne(apiUrl + mockMascota._id);
     expect(req.request.method).toBe('GET');
-    req.flush(mockMascota);
+    req.flush(mockResponse);
   });
 
-  it('should call putMascota and return the updated mascota', () => {
-    const updatedMascota: Mascotas = { ...mockMascota, nombre: 'Max' };
+  // Prueba PUT: Actualizar una mascota
+  it('debería realizar una petición PUT para actualizar una mascota', () => {
+    const updatedMascota = { ...mockMascota, nombre: 'Rex' };
+    const mockResponse = {
+      mensaje: 'Mascota actualizada exitosamente',
+      mascota: updatedMascota
+    };
 
-    service.putMascota(updatedMascota, mockMascota._id).subscribe((res) => {
-      expect(res).toEqual(updatedMascota);
+    service.putMascota(updatedMascota, updatedMascota._id).subscribe((res) => {
+      expect(res).toEqual(mockResponse);
     });
 
-    const req = httpTestingController.expectOne(`${URL_MASCOTAS}/${mockMascota._id}`);
+    const req = httpMock.expectOne(apiUrl + updatedMascota._id);
     expect(req.request.method).toBe('PUT');
-    req.flush(updatedMascota);
+    req.flush(mockResponse);
   });
 
-  it('should call deleteMascota and return a success message', () => {
+  // Prueba DELETE: Eliminar una mascota
+  it('debería realizar una petición DELETE para eliminar una mascota', () => {
+    const mockResponse = {
+      mensaje: 'Mascota eliminada correctamente'
+    };
+
     service.deleteMascota(mockMascota._id).subscribe((res) => {
-      expect(res).toEqual({ message: 'Mascota eliminada con éxito' });
+      expect(res).toEqual(mockResponse);
     });
 
-    const req = httpTestingController.expectOne(`${URL_MASCOTAS}/${mockMascota._id}`);
+    const req = httpMock.expectOne(apiUrl + mockMascota._id);
     expect(req.request.method).toBe('DELETE');
-    req.flush({ message: 'Mascota eliminada con éxito' });
-  });
+    req.flush(mockResponse);
+  });
 });

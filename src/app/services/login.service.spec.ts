@@ -72,5 +72,4 @@ describe(' probando el servicio login', () => {
     peticion.flush(mockRespusta)
   });
 
-
 });
